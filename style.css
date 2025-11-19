@@ -13,7 +13,7 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background: #0a0a0a;
   color: #fff;
-  overflow-x: hidden;
+  
 }
 
 .container {
@@ -27,10 +27,10 @@ nav {
   top: 0;
   width: 100%;
   background: rgba(10, 10, 10, 0.95);
-  backdrop-filter: blur(10px);
+  
   padding: clamp(15px, 2vw, 20px) 0;
   z-index: 1000;
-  box-shadow: 0 2px 20px rgba(255, 0, 79, 0.1);
+
 }
 
 nav .container {
@@ -97,22 +97,9 @@ nav ul li a:hover::after {
   padding: clamp(60px, 10vw, 100px) 0;
 }
 
-#hero::before {
-  content: '';
-  position: absolute;
-  width: clamp(300px, 40vw, 500px);
-  height: clamp(300px, 40vw, 500px);
-  background: radial-gradient(circle, rgba(255, 0, 79, 0.1) 0%, transparent 70%);
-  border-radius: 50%;
-  top: -200px;
-  right: -200px;
-  animation: pulse 4s ease-in-out infinite;
-}
 
-@keyframes pulse {
-  0%, 100% { transform: scale(1); opacity: 0.5; }
-  50% { transform: scale(1.1); opacity: 0.8; }
-}
+
+
 
 .hero-content {
   text-align: center;
@@ -549,7 +536,7 @@ section {
   box-shadow: 0 10px 30px rgba(255, 0, 79, 0.3);
 }
 
-/* Footer */
+
 footer {
   background: #0a0a0a;
   text-align: center;
